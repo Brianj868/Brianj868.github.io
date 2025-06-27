@@ -51,6 +51,25 @@
     .project:hover {
       background: #222;
     }
+
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%; /* 16:9 ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 12px;
+      box-shadow: 0 0 15px #00ffe055;
+      margin-top: 1rem;
+    }
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
     footer {
       text-align: center;
       font-size: 0.9rem;
@@ -89,14 +108,15 @@
     <h2>Featured Projects</h2>
 
     <div class="project">
-      <h3>Product Whisperer</h3>
-      <p>A fine-tuned AI tool that generates high-performing e-commerce listings. Built with OpenAI fine-tuning and integrated with Shopify/REST APIs.</p>
-    </div>
-
-    <div class="project">
-      <h3>Neon Combat Analyzer</h3>
-      <p>A tactical combat log parser that visualizes player performance in FPS games using WebGL and heatmaps.</p>
-    </div>
+  <h3>Product Whisperer</h3>
+  <p>A fine-tuned AI tool that generates high-performing e-commerce listings.</p>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/your_video_id" 
+            title="Product Whisperer Demo"
+            frameborder="0" 
+            allowfullscreen></iframe>
+  </div>
+</div>
 
     <!-- Add more projects here -->
   </section>
